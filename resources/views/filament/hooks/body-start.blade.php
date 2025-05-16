@@ -1,0 +1,2 @@
+@routes()
+{{--@laravelPWA--}}
