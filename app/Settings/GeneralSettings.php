@@ -13,6 +13,8 @@ class GeneralSettings extends Settings {
     public string $app_mobile;
     public string $app_whatsapp;
     public string $app_address;
+    public string $description;
+    public string $working_hours;
 
     // public float $taxes;
     // public bool $visitor_mode;

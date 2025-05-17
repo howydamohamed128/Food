@@ -14,7 +14,7 @@ class EditProduct extends EditRecord {
 
     protected function getHeaderActions(): array {
         return [
-            Actions\LocaleSwitcher::make(),
+            // Actions\LocaleSwitcher::make(),
         ];
     }
     protected function getRedirectUrl(): string

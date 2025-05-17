@@ -80,9 +80,9 @@ class AppServiceProvider extends ServiceProvider {
             'panels::head.start',
             fn(): string => Blade::render('filament.hooks.body-start'),
         );
-        LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
-            $switch->locales(['ar', 'en']);
-        });
+        // LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
+        //     $switch->locales(['ar', 'en']);
+        // });
 
 
         FilamentAsset::register([

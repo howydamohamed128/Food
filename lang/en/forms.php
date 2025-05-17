@@ -347,6 +347,7 @@ return [
         'is_visitor' => 'Visitor mode',
         'version' => 'Version',
         'is_maintenance' => 'Maintenance mode',
+        'working_hours' => 'Working Hours',
     ],
     'tooltip' => [
         'order_limit_per_item' => 'After exceeding the limit, the customer will not pay until approved by a branch manager',

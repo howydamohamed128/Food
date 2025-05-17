@@ -40,7 +40,6 @@ class ManageGeneral extends SettingsPage
                 Forms\Components\Section::make("General")->schema([
                     FileUpload::make('app_logo'),
                     FileUpload::make('fav_icon')->label(__('forms.fields.favicon')),
-
                     TextInput::make('app_name')
                         ->required(),
                     TextInput::make('app_email')
@@ -50,17 +49,15 @@ class ManageGeneral extends SettingsPage
                         ->type('number')
                         ->numeric()
                         ->required(),
-                    TextInput::make('app_mobile')
-                        ->type('number')
-                        ->numeric()
+                    Textarea::make('app_address')
                         ->required(),
-                    TextInput::make('app_whatsapp')
-                        ->type('number')
-                        ->numeric()
+                    Textarea::make('description')
+                        ->required(),
+                    Textarea::make('working_hours')
                         ->required(),
 
                 ]),
-              
+
 
                 Forms\Components\Section::make("social_links")->schema([
 

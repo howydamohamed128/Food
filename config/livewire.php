@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'class_namespace' => 'Tasawk\\Livewire',
+    'class_namespace' => 'App\\Livewire',
 
     /*
     |---------------------------------------------------------------------------

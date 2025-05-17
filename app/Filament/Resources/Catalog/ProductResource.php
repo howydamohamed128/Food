@@ -76,8 +76,8 @@ class ProductResource extends Resource
                     Forms\Components\Select::make('category_id')
                         ->relationship('category')
                         ->required()
-                        ->options(fn() => Category::pluck('name', 'id')->toArray())
-                        ->searchable(['name->ar', 'name->en']),
+                        ->options(fn() => Category::pluck('name', 'id')->toArray()),
+                        // ->searchable(['name->ar', 'name->en']),
 
 
                     TextInput::make('price')

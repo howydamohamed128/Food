@@ -40,14 +40,14 @@ class BannerResource extends Resource implements HasShieldPermissions
     {
 
         return $form->schema([
-            SpatieMediaLibraryFileUpload::make('image_ar')
-                ->label(__('forms.fields.image_en'))
-                ->collection('en')
-                ->required(),
+            // SpatieMediaLibraryFileUpload::make('image_ar')
+            //     ->label(__('forms.fields.image_en'))
+            //     ->collection('en')
+            //     ->required(),
 
-            SpatieMediaLibraryFileUpload::make('image_en')
-                ->label(__('forms.fields.image_ar'))
-                ->collection('ar')
+            SpatieMediaLibraryFileUpload::make('image')
+                ->label(__('forms.fields.image'))
+                // ->collection('ar')
                 ->required(),
             Toggle::make('status')->default(1)
                 ->onColor('success')
@@ -60,9 +60,9 @@ class BannerResource extends Resource implements HasShieldPermissions
         return $table
             ->columns([
                 TextColumn::make('id'),
-                SpatieMediaLibraryImageColumn::make('image_' . app()->getLocale())
+                SpatieMediaLibraryImageColumn::make('image')
                     ->label(__('forms.fields.image'))
-                    ->collection(app()->getLocale())
+                    // ->collection(app()->getLocale())
                     ->translateLabel(),
                 TextColumn::make('created_at')
                     ->date('d/m/Y H:i:s'),

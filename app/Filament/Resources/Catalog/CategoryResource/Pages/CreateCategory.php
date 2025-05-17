@@ -14,7 +14,7 @@ class CreateCategory extends CreateRecord {
     {
         return [
 //            Actions\CreateAction::make(),
-            Actions\LocaleSwitcher::make(),
+            // Actions\LocaleSwitcher::make(),
         ];
     }
     protected function getRedirectUrl(): string {
